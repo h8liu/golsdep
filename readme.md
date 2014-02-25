@@ -1,0 +1,39 @@
+Usage:
+
+    ~/gopath/src/github.com/h8liu/godep$ godep .
+    bufio
+    bytes
+    errors
+    flag
+    fmt
+    go/ast
+    go/build
+    go/doc
+    go/parser
+    go/scanner
+    go/token
+    io
+    io/ioutil
+    log
+    math
+    net/url
+    os
+    path
+    path/filepath
+    reflect
+    regexp
+    regexp/syntax
+    runtime
+    sort
+    strconv
+    strings
+    sync
+    sync/atomic
+    syscall
+    text/template
+    text/template/parse
+    time
+    unicode
+    unicode/utf8
+    unsafe
+
