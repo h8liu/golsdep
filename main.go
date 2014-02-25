@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"go/build"
 	"log"
+	"sort"
 )
 
 type pkgList struct {
@@ -45,6 +46,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	sort.Strings(pkgs.plist)
 	for _, name := range pkgs.plist {
 		if name == target {
 			continue
