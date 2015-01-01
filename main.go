@@ -62,6 +62,10 @@ func findDeps(p string) (*pkgList, error) {
 }
 
 func addDeps(pkgs *pkgList, p string) error {
+	if p == "C" {
+		return nil
+	}
+
 	pkg, err := build.Import(p, "./", 0)
 	if err != nil {
 		return fmt.Errorf("failed to import %s: %v", p, err)
